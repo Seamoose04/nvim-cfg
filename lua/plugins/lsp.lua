@@ -7,10 +7,10 @@ return {
 
 		local function on_attach(_, bufnr)
 			local opts = { buffer = bufnr, noremap = true, silent = true }
-			vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-			vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
-			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+			vim.keymap.set("n", "<leader>ld", vim.lsp.buf.definition, opts)
+			vim.keymap.set("n", "<leader>lk", vim.lsp.buf.hover, opts)
+			vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, opts)
+			vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, opts)
 		end
 
 		-- Server configs go here:

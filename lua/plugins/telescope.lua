@@ -13,7 +13,6 @@ return {
 	keys = {
 		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
 		{ "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
-		{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Find buffers" },
 		{ "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Find help" },
 		{ "<leader>fs", "<cmd>Telescope grep_string<cr>", desc = "Search word under cursor" },
 	},
@@ -41,12 +40,10 @@ return {
 					hidden = true,
 					find_command = {
 						"fd",
-						"--type",
-						"f",
+						"--type=f",
 						"--strip-cwd-prefix",
 						"--hidden",
-						"--exclude",
-						".git" 
+						"--exclude", ".git"
 					},
 				},
 			},
