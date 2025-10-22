@@ -15,6 +15,12 @@ return {
 
 		-- Server configs go here:
 		local servers = {
+			clangd = {
+				pkg = "clangd",
+				filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
+				root_markers = { "compile_commands.json", ".git" },
+				cmd = { "clangd", "--background-index", "--clang-tidy" },
+			},
 			pyright = {
 				pkg = "pyright",
 				filetypes = { "python" },
