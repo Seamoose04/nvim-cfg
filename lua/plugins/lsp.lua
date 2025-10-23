@@ -19,9 +19,10 @@ return {
 				cmd = { "clangd", "--background-index", "--clang-tidy" },
 			},
 			cmake = {
-				pkg = "cmake-language-server",
+				pkg = "neocmakelsp",
 				filetypes = { "cmake" },
 				root_markers = { "CMakeLists.txt", ".git" },
+				cmd = { "neocmakelsp", "--stdio" },
 			},
 			pyright = {
 				pkg = "pyright",
