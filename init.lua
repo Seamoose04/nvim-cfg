@@ -12,5 +12,8 @@ vim.opt.relativenumber = true
 vim.opt["tabstop"] = 2
 vim.opt["shiftwidth"] = 2
 
+-- Use system clipboard
+vim.opt.clipboard = "unnamedplus"
+
 -- Colorscheme
 vim.cmd.colorscheme("tokyonight")

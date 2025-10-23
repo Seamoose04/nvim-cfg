@@ -14,9 +14,14 @@ return {
 		local servers = {
 			clangd = {
 				pkg = "clangd",
-				filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
+				filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "h", "hpp" },
 				root_markers = { "compile_commands.json", ".git" },
 				cmd = { "clangd", "--background-index", "--clang-tidy" },
+			},
+			cmake = {
+				pkg = "cmake-language-server",
+				filetypes = { "cmake" },
+				root_markers = { "CMakeLists.txt", ".git" },
 			},
 			pyright = {
 				pkg = "pyright",
